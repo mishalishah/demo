@@ -1,4 +1,4 @@
-# say-that
+"# say-that
 
 "SAY THAT" is a Speech recognition application.
 
@@ -9,7 +9,7 @@ It is web as well as desktop application.
 
 Some sample actions for better understanding:
 
-user: "125*23*
+user: "125 multiply 23"
 app: 2875
 
 user: "open my facebook"
