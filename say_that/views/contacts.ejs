@@ -1,0 +1,38 @@
+<html>
+<head>
+	<link rel="stylesheet" href="http://localhost:3000/stylesheets/style.css" />
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+    <script src="http://localhost:3000/javascripts/bootstrap-paginator.min.js"></script>
+</head>
+<body>
+
+<a href="http://localhost:3000/profiles/0">Create New Contact</a><br/>
+<% for(var i in contacts){ %>
+<div style="background-color: gray;">
+	<h3><%= contacts[i].name%></h3>
+	<img height="100" width="100" src="<%=contacts[i].image%>" />
+	<span style="color: blue;"><%= contacts[i].contact_number %></span>
+	<span style="color: red;"><%= contacts[i].email %></span><br/>
+	<span><%= contacts[i].address %></span><br/>
+	<a href="http://localhost:3000/profiles/<%=contacts[i]._id%>">Edit</a>
+	<a href="http://localhost:3000/profiles/delete/<%=contacts[i]._id%>">Delete</a>
+</div>
+<% } %>
+<div id="pagination"></div>
+
+ <script type='text/javascript'>
+        var options = {
+            currentPage: <%=currentPage%>,
+            totalPages: <%=totalPage %>,
+			pageUrl: function(type, page, current){
+				return "http://localhost:3000/profiles?page="+page;
+			}
+        }
+
+        $('#pagination').bootstrapPaginator(options);
+ </script>
+</body>
+
+</html>

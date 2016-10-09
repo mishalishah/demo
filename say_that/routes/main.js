@@ -1,0 +1,9 @@
+module.exports=function(app)
+{
+app.get('/index',function(req,res){
+res.render('index.ejs')
+});
+app.get('/profiles',function(req,res){
+res.render('profiles.ejs');
+});
+}

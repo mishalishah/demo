@@ -1,0 +1,22 @@
+[
+  {
+	 "href":"http://google.com",
+	 "aka":[]
+  },
+  {
+	 "href":"http://www.facebook.com",
+	 "aka":["fb"]
+  },
+  {
+	 "href":"http://mail.google.com",
+	 "aka":[
+		"gmail","letter","post box","e-mail"
+	 ]
+  },
+  {
+	 "href":"http://gtu.ac.in",
+	 "aka":[
+		"college","classroom"
+	 ]
+  }
+]

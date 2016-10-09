@@ -1,0 +1,17 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+	// https://www.google.co.in/maps/search/pvr/@22.3405295,73.1738085,17z
+	var a = window.location.href;
+	if(a.indexOf("?q=") > -1){
+		var query = a.substr(a.indexOf("?q=")+3);
+		var link = "https://www.google.co.in/maps/search/"+query+"/@22.3405295,73.1738085,17z";
+		window.location.href = link;
+	}
+</script>
+
+</body>
+
+</html>

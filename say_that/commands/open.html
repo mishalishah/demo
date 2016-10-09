@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+	// https://www.google.co.in/?gfe_rd=cr&ei=TLPxVJSKDeTV8geoyoDYCQ&gws_rd=ssl#q=bookmyshow
+	var a = window.location.href;
+
+	if(a.indexOf("?q=") > -1){
+	var query = a.substr(a.indexOf("?q=")+3);
+
+		console.log(""+query);
+		
+		//var link = "https://www.google.co.in/?gfe_rd=cr&ei=TLPxVJSKDeTV8geoyoDYCQ&gws_rd=ssl/#q="+query;
+		window.location.href = query;
+		
+		}
+	
+	
+	
+</script>
+
+</body>
+
+</html>
