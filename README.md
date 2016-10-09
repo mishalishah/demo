@@ -4,7 +4,7 @@
 
 It just need one click on the mic button, and recognition will start.
 "SAY THAT" receives different voice commands, convert this speech to text on real time basis.
-It converts and interpretes this generated text in different context and performs different actions based on this.
+It converts and interprets this generated text in different context and performs different actions based on this.
 It is web as well as desktop application. 
 
 Some sample actions for better understanding:
