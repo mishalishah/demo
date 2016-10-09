@@ -1,4 +1,4 @@
-# demo
+# say-that
 
 "SAY THAT" is a Speech recognition application.
 
